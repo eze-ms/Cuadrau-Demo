@@ -1,0 +1,2165 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	font-family: roboto, sans-serif;
+    background-color: #fff;   
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper{
+    margin: auto;
+    text-align: center;
+    max-width: 1024px;
+}
+
+.info{
+    background-color: #f5f4f3;
+    
+}
+
+.container-clearfix{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.65rem;
+    color: #fff;
+    font-size: 0.75rem;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.call{
+    display: flex;
+}
+
+.phone>a{
+    margin-right: 1.25rem;
+}
+
+.logo-mail>.fa-envelope{
+    margin-right: 5px;
+    color: #767676;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.45rem;
+}
+
+.logo,nav{
+    margin: auto;
+}
+
+
+.name,nav{
+    font-size: 0.75rem;
+    
+}
+
+.call{
+    display: flex;
+    font-size: 0.75rem;
+    color: #040404;
+}
+
+.flag>ul{
+    display: flex;
+    align-items: center;
+}
+
+.dto{
+  
+    text-align: center;
+    margin: auto;
+    background-color: #e3e3e3;
+    color: #5a5a5a;
+    border: 0.5px solid #fff0;
+    border-radius: 1px;
+    padding: 0.425rem;
+    font-style: italic;
+    margin-right: 0.94rem;
+}
+
+.dto:hover{
+    background-color: #ffffff00;
+    transition: all .2s;
+    color: #5a5a5a;
+    border: 0.5px solid #5a5a5a;
+}
+
+.flag-es,.flag-de{
+    margin-right: 0.4rem
+}
+
+
+header .fa-envelope{ /*<<SI NO HAY COMA, AFECTA AL DIRECTO>>!!*/
+color: inherit;
+}
+
+
+.log-nav{
+    padding-top: 2.65rem;
+    padding-bottom: 1.6rem;
+}
+
+.logo{
+    width: 230px;
+}
+
+.bold{
+    font-weight: 800;
+    
+}
+
+.regular{
+    font-weight: 100;
+    
+
+}
+
+.name{
+    text-align: center;
+    font-style: italic;
+    margin: 0.31rem;
+}
+
+.fa-truck{
+    margin-left: 0.5rem;
+    background-color: #ff8d00;
+    border-radius: 16px;
+    font-size: 0.62rem;
+    padding: 0.56rem;
+    color: #fff;
+    transform: scaleX(-1);
+    vertical-align: 8px;
+}
+
+h1,p,h2,h3,.button-more{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+    font-size: 1.125rem;
+    margin-top: 0.37rem;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-menu>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav>.nav-menu>ul>li{
+    
+    transition: all .2s;
+}
+
+nav>.nav-menu>ul>li>a{
+  display: block;
+  text-decoration: none;
+  padding: 0.62rem 1rem;
+  color: #040404;
+
+}
+
+nav>.nav-menu>ul>li:hover {
+  background-color: #e7e5e5;
+  border-radius: 7px;
+  
+}
+
+nav>.nav-menu>ul>li:hover>a {
+  color: #7A7A7A;
+}
+
+ul li ul{
+  position: absolute;
+  border-radius: 3px;
+  overflow: hidden;
+  display: none;/*<<QUITAR PARA MOSTRAR>>!!*/
+  background: linear-gradient(325deg, #FFF, #FFF);
+  box-shadow: 0px 0px 1.5px #acacac;
+}
+
+ul li:hover ul{
+  display: block;
+  margin-top: 0px;
+}
+
+ul>li>ul>li>a{
+  color: #282828cf;
+  text-align: left;
+  font-size: 1.125rem;
+  padding: 0.62rem 1rem;
+  padding-left: 1.12rem;
+  display: block;
+  text-decoration: none;
+}
+
+ul>li>ul>li>a:hover{
+    background-color: #04ACEC;
+    color: #FFFFFF;
+}
+
+.image-cover{
+    background-image: url(../img/torrent-fals-Fachada1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 100%;
+    height: 445px;
+
+}
+
+.image-cover_one{
+    background-image: url(../img/cover_yoga.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 100%;
+    height: 445px;
+}
+
+.image-cover_two{
+    background-image: url(../img/relax.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 100%;
+    height: 445px;
+}
+
+.image-cover_three{
+    background-image: url(../img/cover_detox.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 53%;
+    height: 412px;
+}
+
+.image-cover_four{
+    background-image: url(../img/retreat.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 75%;
+    height: 412px;
+}
+
+.image-cover_five{
+    background-image: url(../img/cover_mascotas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 58%;
+    height: 412px;
+}
+
+.image-cover_six{
+    background-image: url(../img/ruta_caballo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 58%;
+    height: 412px;
+}
+
+.image-cover_seven{
+    background-image: url(../img/cover_massage_one.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 72%;
+    height: 412px;
+}
+
+.image-cover_eigth{
+    background-image: url(../img/plato.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 58%;
+    height: 412px;
+}
+
+.image-cover_contacto{
+    background-image: url(../img/contacto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 58%;
+    height: 412px;
+}
+
+.image-cover_reservas{
+    background-image: url(../img/reservas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72% 58%;
+    height: 412px;
+}
+
+
+
+.container-tittle-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.4rem;
+}
+
+.container-tittle-form_yoga,.container-tittle-detox{
+    padding-top: 12rem;
+}
+
+.container-tittle-anti_stress{
+    padding-top: 16rem;
+}
+
+.container-tittle-mascotas{
+    padding-top: 15rem
+}
+
+.container-tittle-masaje{
+    padding-top: 17rem;
+}
+
+.container-tittle-restaurante{
+    padding-top: 14rem;
+}
+
+.container-tittle-contacto,.container-tittle-masaje,.container-tittle-reservas{
+    padding-top: 13rem;
+}
+
+h1,p{
+    color: #fff;
+    
+}
+
+h1,.subtittle{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1{
+    font-size: 4.7rem;
+}
+
+.tittle_yoga,.tittle_anti_stress{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
+
+.subtittle{
+    font-size: 2rem;
+}
+
+
+.container-form-button{
+    margin-top: 4.4rem;
+}
+
+.form-reserva{
+    display: flex;
+    align-items: center;
+}
+
+.box-online{
+    margin: auto;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    background-color: #bb9d6e;
+    line-height: 18px;
+    
+    
+}
+
+.box-online>p{
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.in-out{
+    display: flex;
+}
+
+.box-check{
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.name-reserva{
+    background-color: #ffffff87;
+    padding: 1rem 1.8rem;
+    color: #4c4c4c;
+    border: 1px solid #4c4c4ca8;
+}
+
+.fa-calendar-check,.fa-calendar-xmark,.fa-user{
+    color: #767676;
+}
+
+.fa-calendar-check,.fa-calendar-xmark,.fa-user{
+    margin-right: 0.31rem
+}
+
+.submit{
+    margin: auto;
+    border: 1.5px solid #524a3f;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    background-color: #524a3f;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.submit:hover {
+    background-color: #ffffff00;
+    transition: all .2s;
+    color: #fff;
+    border: 1.5px solid #524a3f;
+    background-color: #524a3f80;
+}
+
+
+.image-home,.image-detox,.image-massage,.image-massage_two,.image-protocolo,.image_yoga_reserva{
+    max-width: 500px;
+    margin-right: 3.12rem;
+    /* box-shadow: 0 0 1rem rgba(0,0,0,.2); */
+}
+
+
+.image-massage{
+    margin-right: 0;
+}
+.image_yoga_reserva{
+    margin-right: 0;
+}
+
+.image-protocolo{
+    margin-right: 0;
+}
+
+.image-massage_two{
+    width: 32%;
+}
+
+.image-contact{
+    margin-bottom: 1rem;
+}
+
+.image-contact,.image-contact_2{
+   max-width: 500px 
+}
+
+.image-reserva,.image-reserva_last{
+    max-width: 343px;
+    margin-bottom: 10px;
+    
+}
+
+.image-reserva_last{
+    margin-bottom: 0;
+}
+
+.image-detox{
+    margin-right: 2rem;
+}
+
+.presentation{
+    display: flex;
+    align-items: flex-start;
+}
+
+.presentation_one,.presentation_two{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.presentation_four,.presentation_five,.presentation_seven{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.presentation_five{
+    align-items: flex-start;
+}
+
+
+.presentation_seven{
+    margin-bottom: 8rem;
+}
+
+.presentation_yoga,.presentation_anti_stress{
+    display: flex;
+    align-items: flex-start;
+}
+
+.presentation_anti_stress{
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+.presentation_mascotas{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.program{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    color: #040404;
+    width: 30%;
+    margin-right: 3rem;
+}
+
+.container_text_program_anti_stress,.container_text_program_caballos,.container_text_massage{
+    background-color: #f6f0e8;
+    padding: 1.5rem 1rem;
+    /* box-shadow: 0px 13px 24px 0px rgb(0 0 0 / 20%); */
+}
+
+.container_text_program_anti_stress,.container_text_massage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+
+.tittle_program,.tittle_program_anti_stress,.tittle_program_detox,.tittle_program_transforma,.tittle_program_mascotas,.tittle_program_caballo,.tittle_program_massage{
+    font-size: 2rem;
+    font-weight: 500;
+    
+    text-align: center;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.tittle_program_anti_stress{
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+.tittle_program_transforma{
+    text-align: center;
+}
+
+.tittle_program_mascotas{
+    width: 94%;
+}
+
+/* .tittle_program_caballo{
+    width: 97%;
+} */
+
+
+
+.container-data,.container-data_mascotas{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* .container-data_mascotas{
+    width: 87%;
+} */
+
+.container-data_masaje{
+    width: 100%;
+}
+
+.data{
+    color: #040404;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.container-help{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.inside,.rent,.tittle-list-services,.tittle-list-services_massage,.tittle-list-services_restaurante{
+    font-size: 1.43rem;
+    color: #040404;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.tittle-list-services_restaurante{
+    font-size: 1.25rem;
+    margin: 1rem 0rem 0.5rem;
+}
+
+.text-presentation{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-presentation_yoga{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.text-presentation>p{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-presentation_mascotas{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.text-presentation_yoga>p{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.text-presentation_anti_stress{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+}
+
+.text-presentation_anti_stress>p{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    font-family:'Quicksand', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.text-presentation_mascotas>p{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    font-family:'Quicksand', sans-serif;
+}
+
+.text-presentation_restaurante{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.text-presentation_restaurante>.text1{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.85rem;
+    font-family:'Quicksand', sans-serif;
+    width: 90%;
+
+}
+
+
+.text-services,.text-services_massage,.text-services_detox,.text-services_transforma,.text-services_mascotas,.text-services_caballos{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    font-family:'Quicksand', sans-serif;
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.text-services_massage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-services_massage>.text1{
+    color: #040404;
+    margin-bottom: 3rem;
+    width: 77%;
+}
+
+.presentation_box_terapias{
+    margin-bottom: 4rem;
+}
+
+.text-services_mascotas{
+    width: 100%;
+}
+
+.text-services_caballos{
+    width: 90%;
+}
+
+.tittle-list-services,.tittle-list-services,.tittle-list-services_mascotas,.tittle-list-services_massage{
+    margin-bottom: 1rem;
+    font-size: 1.43rem;
+    color: #040404;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.6rem;
+    width: 78%;
+}
+
+.tittle-list-services{
+    width: 100%;
+}
+
+.tittle-list-services_mascotas{
+    width: 90%;
+}
+
+.tittle-list-services_massage{
+    text-align: center;
+}
+
+.services_anti_stress{
+    list-style-type: circle;
+    line-height: 1.65rem;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.container_box_massage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container_box_restaurante{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.presentation_box{
+    padding-top: 4rem;
+
+}
+
+.box_masaje{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+}
+
+.box_restaurante{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+    margin-top: 5rem;
+}
+
+.tittle-list-services_massage{
+    margin-top: 1rem;
+}
+
+.box_masaje>.text1{
+    color: #040404;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0;
+    padding: 0 1rem 1rem;
+}
+
+.box_restaurante>.text1{
+    color: #040404;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 0;
+    padding: 0 1rem 3rem;
+}
+
+.box-reserva{
+    margin-top: 1rem;
+}
+
+.box-web_reserva{
+    margin-top: 4rem;
+}
+
+.button-more{
+    font-size: 0.9rem;
+    text-align: center;
+    margin: auto;
+    width: 170px;
+    line-height: 35px;
+    background-color: #524a3f;
+    color: #fff;
+    border: 1.5px solid #fff0;
+}
+
+.button-more:hover {
+    background-color: #ffffff00;
+    transition: all .2s;
+    color: #524a3f;
+    border: 1.5px solid #524a3f;
+}
+
+.button-reserva{
+    font-size: 1rem;
+    text-align: center;
+    margin: auto;
+    width: 170px;
+    line-height: 45px;
+    background-color: #524a3f;
+    color: #fff;
+    border: 1.5px solid #fff0;
+}
+
+.button-reserva:hover {
+    background-color: #ffffff00;
+    transition: all .2s;
+    color: #524a3f;
+    border: 1.5px solid #524a3f;
+}
+
+
+
+.box-activities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0px 13px 24px 0px rgb(0 0 0 / 20%);
+}
+
+.box-activities>img{
+    display: block;
+}
+
+.block-twoo_twoo{
+    padding-top: 6rem;
+}
+
+.block-twoo,.block-three,.block-four,.block-five,.block-six,.block-seven,.block-eigth{
+    padding-top: 8rem;
+}
+
+.tittle-experience,.actividades,.tittle-news{
+    margin-bottom: 3rem;
+}
+
+.text-experience{
+    margin-bottom: 2rem;
+}
+
+.our-experience{
+    font-size: 2rem;
+    color: #040404;
+    line-height: 3rem;
+    font-weight: 500;
+
+}
+
+.experience{
+    font-size: 1.5rem;
+    color: #040404;
+    width: 74%;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.box-activities>li{
+    width: 33.33%;
+    margin: auto;
+}
+
+.item{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.item::before{
+    content:'';
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: .3s ease;
+    z-index:  2;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; 
+    pointer-events: none;
+}
+.item1::before{
+    content:'YOGA-MEDITACIÓN';
+}
+.item2::before{
+    content:'ANTI-STRESS';
+}
+.item3::before{
+    content:'DETOX';
+}
+.item4::before{
+    content:'TRANSFORMA';
+}
+.item5::before{
+    content:'TRAE TU MASCOTA';
+}
+.item6::before{
+    content:'PASEO EN CABALLO';
+}
+.item7::before{
+    content:'21 DÍAS PARA CAMBIAR TU VIDA';
+}
+.item8::before{
+    content:'MASAJE';
+}
+.item9::before{
+    content:'RESTAURANTE';
+}
+
+
+.item:hover::before{
+    opacity: 1;   
+    transition: .3s ease;
+    
+}
+
+
+.container-box-reserva{
+    display: flex;
+    align-items: center;
+}
+
+.container-yoga-fisico{
+    display: flex;
+    align-items: center;
+    margin: 5rem 0 5rem;
+    align-items: flex-start;
+}
+
+
+.text-reserva{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 63%;
+}
+
+/* .image-casa-cuadrau-inside{
+    box-shadow: 0px 13px 24px 0px rgb(0 0 0 / 20%);
+} */
+
+.image_yoga_reserva{
+    box-shadow: 0px 13px 24px 0px rgb(0 0 0 / 20%);
+}
+
+.text-reserva_yoga{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+}
+
+.text-reserva>p{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    width: 92%;
+}
+
+.text-reserva_yoga>p{
+    color: #040404;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.5rem;
+    width: 92%;
+}
+
+
+
+.image-cuadrau{
+    display: block;
+}
+
+.rent{
+    width: 86%;
+}
+
+.button-actividades{
+    font-size: 1.15rem;
+    text-align: center;
+    margin: auto;
+    width: 320px;
+    line-height: 50px;
+    border: 1.25px solid #524a3f;
+    color: #524a3f;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+
+}
+
+.button-actividades:hover {
+    background-color: #c0bfbf;
+    transition: all .2s;
+    color: #ffffff;
+    border: 1.5px solid #c0bfbf;
+}
+
+.reserva{
+    margin-top: 3rem;
+}
+
+
+.box-dates{
+    display: flex;
+    padding: 0.5rem;
+}
+
+
+.box2{
+    margin-left: 5px;
+}
+
+.box3{
+    margin-left: 5px;
+}
+
+.image-box{
+    box-shadow: 0px 13px 24px 0px rgb(0 0 0 / 20%);
+}
+
+.text-box{
+    margin-top: 1.5rem;
+    line-height: 1.6rem;
+}
+
+.date-1{
+    font-weight: 500;
+    color: #040404;
+    font-size: 1.25rem;
+}
+
+.date{
+    color: #040404;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.image-map{
+    background-color: #f5f4f3;
+    padding-top: 45px;
+}
+
+.location{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    color: #040404;
+    font-weight: 500;
+}
+
+iframe{
+    margin-top: 35px;
+    margin-bottom: 80px;
+    box-shadow: 4px 6px 12px 2px #0000002b;
+    width: 100%;
+}
+
+.cartas{
+    font-size: 2rem;
+    color: #040404;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+
+.newsletters{
+    background-color: #f6f0e8;
+    width: 67%;
+    margin: auto;
+    padding: 3rem 0 10.5rem;
+}
+
+.container_contacto{
+    background-color: #f6f0e8;
+    width: 48%;
+    margin: auto;
+    padding: 3rem 0 4.5rem;
+    box-shadow: 0px 13px 24px 0px rgb(0 0 0 / 15%);
+}
+
+.presentation_box_reserva{
+    display: flex;
+
+
+}
+.box_contacto,.box_reserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f0e8;
+    width: 62%;
+    margin: auto;
+    padding: 3rem 0 4.5rem;
+}
+ 
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    
+}
+
+li>.bordername_contact{
+    
+    margin-right: 5px;
+}
+
+li>.borderapellidos_contact{
+    
+    margin-left: 5px;
+}
+
+.text-reserva-formulario{
+    color: #040404;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-reserva-formulario>p{
+    font-family: 'Quicksand', sans-serif;
+    color: #040404;
+    font-size: 1.25rem;
+}
+
+
+.tittle-newsletter,.tittle-contacto{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.tittle-contacto{
+    width: 80%;
+    line-height: 2rem;
+}
+
+.container-name{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.container-fecha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-fecha_desde,.box-fecha_hasta{
+    width: 50%;
+    text-align: left;
+}
+
+.box-fecha_desde{
+    margin-right: 5px;
+}
+
+.box-fecha_hasta{
+    margin-left: 5px;
+}
+
+.bordername,.bordermail{
+    padding: 0.62rem;
+    border: 1.5px solid #fff;
+    border-radius: 3px;
+    width: 75%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.62rem
+}
+
+.box_name,.box_mail_phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bordername_contact,.borderapellidos_contact,.bordermail_contact,.bordertelefono_contact,.border_conocer,.border_mensaje,.border_actividad,.border_name_date,.boreder_date,.border_name-date,.border_conocer,.border_mensaje{
+    padding: 0.62rem;
+    border: 1.5px solid #fff;
+    border-radius: 3px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0.62rem;
+}
+
+.border_name-date{
+    margin-top: 0.25rem;
+}
+
+.bordermail_contact{
+    margin-right: 5px;
+}
+
+.bordertelefono_contact{
+    margin-left: 5px;
+}
+
+.box_animales{
+    margin-bottom: 0.62rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.box_animales>.box_date{
+    margin-right: 1rem;
+}
+#check{
+    margin-top: 3rem;
+}
+
+.accept,.box_name,.box_date,.si,.no{
+    font-size: 0.9em;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+   
+}
+
+.container-suscribirse{
+    margin-top: 2.5rem;
+}
+
+.button-suscribirse{
+    font-size: 1.15rem;
+    text-align: center;
+    margin: auto;
+    width: 150px;
+    line-height: 41px;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.button-suscribirse:hover {
+    background-color: #c0bfbf;
+    transition: all .2s;
+    color: #ffffff;
+}
+
+.container-footer{
+    background-color: #524a3f;
+    padding: 1.9rem 0 2.5rem;
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto{
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.tittle-contact{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.container-rrss{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+
+.adress,.mail-footer,.phone-footer,.follow-us{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.box-info{
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.box-info>p{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.follow-us{
+    margin-bottom: 1.25rem;
+}
+
+.box-rrss{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+/* tablet */
+@media screen and (max-width:  925px){
+
+    nav>.nav-menu>ul>li>a{
+        padding: 0.62rem 0.9rem;
+    }
+
+    .name-reserva{
+        padding: 1rem 1rem;
+    }
+
+    .block-twoo,.block-three,.block-four,.block-five,.block-six,.block-seven,.block-eigth{
+        padding-top: 5rem;
+}
+
+    .image-home{
+        margin-right: 1.5rem;
+    }
+
+    .container-form-button{
+        margin-top: 4.4rem;
+    }
+
+   .presentation,.container-box-reserva,.presentation_yoga,.container-yoga-fisico,.presentation_anti_stress,.presentation_one,.block-four,.presentation_mascotas,.presentation_five,.presentation_seven{
+        padding: 0rem 1rem;
+    }
+
+    .presentation_two{
+        padding: 0rem 2rem;
+
+    }
+
+
+    .container-yoga-fisico{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    /* four */
+    .block-four{
+        padding-top: 8rem;
+    }
+
+    /* seven */
+
+    
+    .image-cover_seven{
+        background-position: 72% 93%;
+    }
+
+    .text-services_massage{
+        width: 67%;
+    }
+
+    .text-services_massage>.text1{
+        text-align: left;
+        width: 100%;
+    }
+
+    .container_box_massage{
+        padding: 0rem 1rem;
+    }
+
+/* reserva */
+    
+    .presentation_box_reserva{
+        padding: 4rem;
+    }
+    
+    .box_reserva{
+        width: 51%;
+        padding: 3rem 13px 3.5rem;
+    }
+
+    .text-reserva-formulario{
+        width: 90%;
+    }
+
+}
+    
+    /* tablet */
+@media screen and (max-width:  768px){
+
+    nav>.nav-menu>ul>li>a{
+        padding: 0.62rem 0.42rem;
+    }
+
+ 
+    .container-tittle-form{
+        padding-top: 2rem;
+    }
+
+    .tittle-cover{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+
+
+    .form-reserva{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-form-button {
+        margin-top: 3rem;
+}
+
+    .box-online{
+        padding: 0.5rem 4.7rem;
+    }
+
+    .name-reserva{
+        padding: 1rem 0.6rem;
+    }
+
+    .in-out,.box-button{
+        margin-top: 1.1rem;
+    }
+
+    .submit{
+        padding: 1rem 6.1rem;
+    }
+
+    .presentation{
+        align-items: flex-start;
+    }
+
+    .container-box-reserva{
+        align-items: flex-start;
+    }
+
+    .text-reserva{
+        margin-top: 0;
+    }
+
+/* two */
+    .text-services{
+        width: 51%;
+    }
+
+/* five */
+
+    .tittle_program_mascotas{
+        text-align: left;
+    }
+
+    .tittle-list-services_mascotas{
+        text-align: center;
+        width: 94%;
+    }
+
+
+
+    .container_text_program_anti_stress{
+        align-items: flex-start;
+    }
+
+
+/* five */
+
+    .image-cover_seven{
+        background-position: 72% 166%;
+    }
+    
+    .tittle-list-services_massage{
+        width: 100%;
+    }
+
+/* contact */
+
+    .box_contacto{
+        width: 50%;
+    }
+
+/* reserva */
+    
+    .presentation_box_reserva{
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .box_reserva{
+        width: 60%;
+        margin-right: 1rem;
+    }
+}
+
+
+
+
+/* MOVIL */
+@media screen and (max-width: 600px){
+    
+    .container-clearfix{
+        display: flex;
+        justify-content: center;
+    }
+
+    .call{
+        flex-direction: column;
+        line-height: 1rem;
+    }
+    .phone{
+        margin-right: 0rem;
+    }
+
+    .flag{
+        display: none;
+    }
+
+    .nav-menu>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-tittle-form{
+        padding-top: 4rem;
+    }
+
+    .tittle-cover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        width: 69%;
+        line-height: 3.5rem;
+    }
+
+    .subtittle{
+        font-size: 2rem;
+    }
+
+    .form-reserva {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box-online{
+        padding: 0.5rem 4.3rem
+    }
+
+    .container-form-button {
+        margin-top: 4rem;
+    }
+
+    .form-reserva,.box-online>p,.box-button>.submit{
+        font-size: 0.8rem;
+    } 
+
+    .in-out,.box-button{
+        margin-top: 1.1rem;
+    }
+
+    .submit{
+        padding: 1rem 5.4rem;
+    }
+
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation_yoga{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-presentation_yoga{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .container-yoga-fisico{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .image-home{
+        margin-right: 0rem;
+    }
+
+    .text-presentation{
+        margin-top: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .experience{
+        width: 63%;
+    }
+
+    .box-reserva{
+        margin-top: 35px
+    }
+
+    .box-activities{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .box-activities>li{
+        width: 100%;
+    }
+
+    .container-box-reserva{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-reserva{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 1.6rem;
+    }
+
+    .rent{
+        width: 82%;
+    }
+
+    .text-reserva>p{
+        
+        width: 82%;
+    }
+
+    .actividades{
+        margin-bottom: 0rem;
+    }
+
+    .box-dates{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .image-box{
+        margin-top: 3rem;
+    }
+
+    .box1>.image-box{   
+        display: inline-block;
+    }
+
+     .box2>.image-box{   
+        display: inline-block;
+    }
+
+     .box3>.image-box{   
+        display: inline-block;
+    }
+
+    .box2,.box3{
+        margin-left: 0;
+    }
+
+    .newsletters{
+        width: 100%;
+        padding: 3rem 0 2.5rem;
+        display: flex;
+        justify-content: center
+    }
+
+    .box-newsletters{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+    }
+
+    .box-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .contacto,.box-info{
+        text-align: center;
+    }
+
+    .box-info,.container-rrss{
+        margin-top: 1rem;
+    }
+
+    .follow-us {
+    margin-bottom: 0.4rem;
+}
+
+    .box-rrss{
+        justify-content: space-around;
+    }
+
+/* two */
+    .presentation_anti_stress{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-presentation_anti_stress,.text-presentation_mascotas{
+        width: 90%;
+    }
+
+    .program{
+        width: 90%;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 2rem
+    }
+
+    .tittle_program_anti_stress{
+        text-align: center;
+    }
+
+    .box-web_reserva_form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-help{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .presentation_one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-massage{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .text-services{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation_two{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .image-massage_two{
+        width: 61%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .tittle-list-services{
+        text-align: center;
+    }
+
+
+/* three */
+
+
+
+    .tittle_program_detox{
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .image-detox{
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .text-services_detox,.tittle-list-services{
+        width: 100%;}
+
+/* four */
+
+    .block-four{
+        padding-top: 8rem;
+    }
+
+    .presentation_four{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-services_transforma{
+        width: 100%;
+    }
+
+/* five */
+
+    .presentation_mascotas{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .presentation_five{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tittle_program_mascotas{
+        text-align: center;
+        width: 75%;
+    }
+
+/* seven */
+    
+    .container_text_massage{
+        align-items: center;
+    }
+
+    .tittle_program_massage{
+        width: 100%;
+
+    }    
+
+    .presentation_seven{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-services_massage{
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .tittle-list-services_massage{
+        margin-top: 2rem;
+    }
+
+    .container_box_massage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation_box_terapias{
+        margin-bottom: 0;
+
+    }
+    .box_masaje{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+/* eigth */
+    
+    .container_box_restaurante{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box_restaurante{
+        width: 90%;
+    }
+
+/* eigth */
+
+    .box_contacto{
+        padding: 3rem 13px 4.5rem;
+        width: 66%;
+    }
+
+    .name_container_box{
+         display: flex;
+        flex-direction: column;
+    }
+    
+/* contact */
+
+    .image-cover_contacto{
+        background-position: 5% 58%;
+    }
+
+    .box_name, .box_mail_phone{
+        flex-direction: column;
+    }
+    
+    li>.bordername_contact{
+        margin-right: 0;
+    }   
+
+    li>.borderapellidos_contact{
+        margin-left: 0;
+    } 
+
+    li>.bordermail_contact{
+        margin-right: 0;
+    }
+
+    li>.bordertelefono_contact{
+        margin-left: 0;
+    }
+
+/* reservas */
+
+    
+
+    .presentation_box_reserva{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text1{
+        width: 90%;
+    }
+    
+
+    .box_reserva{
+        width: 100%;
+        
+    }
+    
+    .text-reserva-formulario{
+        width: 77%;
+    }
+
+    .container-fecha{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-fecha_desde, .box-fecha_hasta{
+        width: 100%;
+    }
+
+    .box-fecha_desde{
+        margin-right: 0px;
+    }
+
+    .box-fecha_hasta{
+        margin-left: 0px;
+    }
+
+    
+    .container-image_contact{
+
+        display: none;
+    }
+
+}
+
+
+
+
+/* MOVIL */
+@media screen and (max-width: 375px){
+
+    .container-tittle-form{
+        padding-top: 2rem;
+    }
+
+    .container-form-button{
+        margin-top: 2rem;
+    }
+
+    .box-online{
+        padding: 0.5rem 3.95rem;
+    }
+
+    .name-reserva{
+        padding: 1rem 0.5rem;
+    }
+
+    .submit{
+        padding: 1rem 5.1rem;
+    }
+
+    .box2,.box3{
+        margin-left: 0;
+    }
+
+/* two */
+    
+    .image-massage_two{
+        width: 100%;
+    } 
+
+    .tittle-list-services{
+        width: 94%;
+    }   
+
+    .text-services{
+        text-align: center;
+    }
+
+/* three */
+    .text-services_detox{
+        width: 100%;
+    }
+
+/* five */
+
+    .tittle_program_mascotas{
+        width: 100%;
+    }
+
+    .text-services_mascotas{
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .tittle-list-services_mascotas{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-data_mascotas{
+        width: 100%;
+    }
+
+/* six */
+    
+
+    .image-cover_six{
+        background-position: 91% 57%;
+
+    }
+
+    .text-services_caballos{
+        width: 79%;
+        margin-left: 0;
+        
+    }
+
+/* seven */
+
+    .image-cover_seven{
+        background-position: 13% 166%;
+    }
+
+    .button-actividades{
+        width: 260px;
+    }
+
+/* eigth */
+
+    .box_contacto{
+       
+        width: 90%;
+    }    
+
+/* contact */
+    
+    .image-cover_contacto{
+        background-position: 48% 58%;
+    }
+
+    #check{
+        margin: 0 2rem;
+    }
+
+/* reserva */ 
+
+    .box_reserva{
+        padding: 3rem 0px 3.5rem;
+    }
+
+    .box_animales{
+        margin: 1rem;
+    }
+  
+
+}
+
+
+
+
+
+
