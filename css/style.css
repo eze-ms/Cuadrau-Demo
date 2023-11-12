@@ -1561,7 +1561,8 @@ li>.borderapellidos_contact{
 @media screen and (max-width: 600px){
     
     h1{
-        font-size: 4.2rem;
+        font-size: 3.8rem;
+        padding: 1px 17px 3px 17px;
     }
 
     .container-clearfix{
@@ -1643,7 +1644,7 @@ li>.borderapellidos_contact{
     }
 
     .text-presentation_yoga{
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         margin-top: 1rem;
@@ -1808,8 +1809,6 @@ li>.borderapellidos_contact{
         flex-direction: column;
         align-items: center;
     }
-
-
 
     .presentation_one{
         display: flex;
@@ -2000,7 +1999,8 @@ li>.borderapellidos_contact{
     }
 
     .text1{
-        width: 90%;
+        width: 100%;
+        text-align: center;
     }
     
 
@@ -2068,6 +2068,7 @@ li>.borderapellidos_contact{
         margin-left: 0;
     }
 
+
 /* two */
     
     .image-massage_two{
@@ -2128,7 +2129,7 @@ li>.borderapellidos_contact{
     }
 
     .button-actividades{
-        width: 260px;
+        width: 100%;
     }
 
 /* eigth */
