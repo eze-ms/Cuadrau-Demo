@@ -1560,6 +1560,10 @@ li>.borderapellidos_contact{
 /* MOVIL */
 @media screen and (max-width: 600px){
     
+    h1{
+        font-size: 4.2rem;
+    }
+
     .container-clearfix{
         display: flex;
         justify-content: center;
@@ -1593,7 +1597,7 @@ li>.borderapellidos_contact{
     }
 
     h1{
-        width: 69%;
+        width: 100%;
         line-height: 3.5rem;
     }
 
@@ -1630,7 +1634,6 @@ li>.borderapellidos_contact{
     .presentation{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .presentation_yoga{
@@ -1661,11 +1664,11 @@ li>.borderapellidos_contact{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
     .experience{
-        width: 63%;
+        width: 100%;
     }
 
     .box-reserva{
@@ -1691,17 +1694,17 @@ li>.borderapellidos_contact{
     .text-reserva{
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 313px;
         margin-top: 1.6rem;
     }
 
     .rent{
-        width: 82%;
+        width: 100%;
     }
 
     .text-reserva>p{
         
-        width: 82%;
+        width: 100%;
     }
 
     .actividades{
@@ -2046,7 +2049,7 @@ li>.borderapellidos_contact{
     }
 
     .container-form-button{
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .box-online{
