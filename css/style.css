@@ -694,7 +694,6 @@ strong{
 
 }
 
-
 .text-services,.text-services_massage,.text-services_detox,.text-services_transforma,.text-services_mascotas,.text-services_caballos{
     color: #040404;
     font-size: 1.25rem;
@@ -859,8 +858,6 @@ strong{
     color: #524a3f;
     border: 1.5px solid #524a3f;
 }
-
-
 
 .box-activities{
     display: flex;
@@ -1354,8 +1351,11 @@ li>.borderapellidos_contact{
     line-height: 1.5rem;
 }
 
-
-
+input[type="checkbox"],
+.fa-bars,
+.fa-times {
+    display: none;
+}
 
 
 /* tablet */
@@ -1403,7 +1403,7 @@ li>.borderapellidos_contact{
 
     /* four */
     .block-four{
-        padding-top: 8rem;
+        padding-top: 5rem;
     }
 
     /* seven */
@@ -1443,119 +1443,107 @@ li>.borderapellidos_contact{
 
 }
     
-    /* tablet */
-@media screen and (max-width:  768px){
+/* tablet */
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 69%;
+    }
 
-    nav>.nav-menu>ul>li>a{
+    nav > .nav-menu > ul > li > a {
         padding: 0.62rem 0.42rem;
     }
 
- 
+    .container-tittle-form, .form-reserva, .container-form-button,
+    .box-online, .name-reserva, .in-out, .box-button, .submit,
+    .container-box-reserva, .text-reserva, .text-services,
+    .tittle_program_mascotas, .tittle-list-services_mascotas,
+    .container_text_program_anti_stress, .image-cover_seven,
+    .tittle-list-services_massage, .box_contacto,
+    .presentation_box_reserva, .box_reserva {
+        width: auto;
+    }
+
+    .tittle-cover, .presentation, .container-box-reserva,
+    .presentation_box_reserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container-tittle-form{
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
-    .tittle-cover{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
+    .container-box-reserva, .presentation_box_reserva {
+        align-items: flex-start;
     }
 
-
-
-    .form-reserva{
-        display: flex;
+    .form-reserva {
         align-items: center;
         flex-direction: column;
     }
 
-    .container-form-button {
-        margin-top: 3rem;
-}
-
-    .box-online{
-        padding: 0.5rem 4.7rem;
-    }
-
-    .name-reserva{
-        padding: 1rem 0.6rem;
-    }
-
-    .in-out,.box-button{
+    .container-form-button, .box-online, .name-reserva, .in-out, .box-button,
+    .submit, .text-reserva, .tittle-list-services_mascotas,
+    .container_text_program_anti_stress, .box_reserva {
         margin-top: 1.1rem;
     }
 
-    .submit{
+    .box-online, .box-button {
+        margin-top: 1.1rem;
+    }
+
+    .submit {
         padding: 1rem 6.1rem;
     }
 
-    .presentation{
-        align-items: flex-start;
+    .text-presentation{
+        margin-top: 2rem;
+        align-items: center;
+    }
+    .text-reserva {
+        margin-top: 2rem;
+        align-items: center;
     }
 
-    .container-box-reserva{
-        align-items: flex-start;
+    .text-reserva>p {
+    width: 100%;
+    }
+    
+    .box-reserva{
+        margin-top: 2rem;
+    }
+    .rent{
+       width: 100%; 
     }
 
-    .text-reserva{
-        margin-top: 0;
-    }
-
-/* two */
-    .text-services{
-        width: 51%;
-    }
-
-/* five */
-
-    .tittle_program_mascotas{
+    .tittle_program_mascotas {
         text-align: left;
     }
 
-    .tittle-list-services_mascotas{
-        text-align: center;
-        width: 94%;
-    }
-
-
-
-    .container_text_program_anti_stress{
+    .container_text_program_anti_stress {
         align-items: flex-start;
     }
 
-
-/* five */
-
-    .image-cover_seven{
+    .image-cover_seven {
         background-position: 72% 166%;
     }
-    
-    .tittle-list-services_massage{
-        width: 100%;
-    }
-
-/* contact */
-
-    .box_contacto{
-        width: 50%;
-    }
-
-/* reserva */
-    
-    .presentation_box_reserva{
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .box_reserva{
-        width: 60%;
-        margin-right: 1rem;
-    }
+    .container-box-reserva{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
+    .box_reserva {
+        margin-right: 1rem;
+    }
 
 
+    .presentation_box_reserva {
+        padding: 2rem;
+    }
+    
+}
 
 /* MOVIL */
 @media screen and (max-width: 600px){
@@ -1991,7 +1979,6 @@ li>.borderapellidos_contact{
 
 /* reservas */
 
-    
 
     .presentation_box_reserva{
         display: flex;
@@ -2036,134 +2023,139 @@ li>.borderapellidos_contact{
         display: none;
     }
 
+    
 }
-
-
-
 
 /* MOVIL */
-@media screen and (max-width: 375px){
-
-    .container-tittle-form{
-        padding-top: 2rem;
+@media screen and (max-width: 390px) {
+    /* menu responsive */
+    .respmenu input[type="checkbox"],
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        display: initial;
     }
 
-    .container-form-button{
-        margin-top: 4rem;
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
+        font-size: 48px;
+        pointer-events: none;
     }
 
-    .box-online{
-        padding: 0.5rem 3.95rem;
+    .respmenu input[type="checkbox"] { opacity: 0; }
+
+    .respmenu {
+        color: #7c7063;
+        position: relative;
+        min-height: 48px;
     }
 
-    .name-reserva{
-        padding: 1rem 0.5rem;
+    .respmenu nav { display: none; }
+
+    .respmenu input:checked ~ nav { display: block; }
+
+    .respmenu input:checked ~ .fa-bars { display: none; }
+
+    .respmenu input:not(:checked) ~ .fa-times { display: none; }
+
+    .nav-menu>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
-
-    .submit{
-        padding: 1rem 5.1rem;
-    }
-
-    .box2,.box3{
-        margin-left: 0;
-    }
-
-
-/* two */
-    
-    .image-massage_two{
-        width: 100%;
-    } 
-
-    .tittle-list-services{
-        width: 94%;
-    }   
-
-    .text-services{
-        text-align: center;
-    }
-
-/* three */
-    .text-services_detox{
-        width: 100%;
-    }
-
-/* five */
-
-    .tittle_program_mascotas{
-        width: 100%;
-    }
-
-    .text-services_mascotas{
-        margin-left: 0;
-        width: 90%;
-    }
-
-    .tittle-list-services_mascotas{
-        width: 100%;
-        text-align: center;
-    }
-
-    .container-data_mascotas{
-        width: 100%;
-    }
-
-/* six */
-    
-
-    .image-cover_six{
-        background-position: 91% 57%;
-
-    }
-
-    .text-services_caballos{
-        width: 79%;
-        margin-left: 0;
-        
-    }
-
-/* seven */
-
-    .image-cover_seven{
-        background-position: 13% 166%;
-    }
-
-    .button-actividades{
-        width: 100%;
-    }
-
-/* eigth */
-
-    .box_contacto{
-       
-        width: 90%;
-    }    
-
-/* contact */
-    
-    .image-cover_contacto{
-        background-position: 48% 58%;
-    }
-
-    #check{
-        margin: 0 2rem;
-    }
-
-/* reserva */ 
-
-    .box_reserva{
-        padding: 3rem 0px 3.5rem;
-    }
-
-    .box_animales{
-        margin: 1rem;
-    }
-  
 
 }
+/* MOVIL */
+@media screen and (max-width: 375px) {
 
+    .container-tittle-form { padding-top: 2rem; }
+    .container-form-button { margin-top: 4rem; }
+    .box-online { padding: 0.5rem 3.95rem; }
+    .name-reserva { padding: 1rem 0.5rem; }
+    .submit { padding: 1rem 5.1rem; }
+    .box2, .box3 { margin-left: 0; }
 
+    /* two */
+    .image-massage_two { width: 100%; }
+    .tittle-list-services { width: 94%; }
+    .text-services { text-align: center; }
 
+    /* three */
+    .text-services_detox { width: 100%; }
 
+    /* five */
+    .tittle_program_mascotas { width: 100%; }
+    .text-services_mascotas { margin-left: 0; width: 90%; }
+    .tittle-list-services_mascotas { width: 100%; text-align: center; }
+    .container-data_mascotas { width: 100%; }
 
+    /* six */
+    .image-cover_six { background-position: 91% 57%; }
+    .text-services_caballos { width: 79%; margin-left: 0; }
+
+    /* seven */
+    .image-cover_seven { background-position: 13% 166%; }
+    .button-actividades { width: 100%; }
+
+    /* eigth */
+    .box_contacto { width: 90%; }
+
+    /* contact */
+    .image-cover_contacto { background-position: 48% 58%; }
+    #check { margin: 0 2rem; }
+
+    /* reserva */
+    .box_reserva { padding: 3rem 0px 3.5rem; }
+    .box_animales { margin: 1rem; }
+
+    /* menu responsive */
+    .respmenu input[type="checkbox"],
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        display: initial;
+    }
+
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+    }
+
+    .respmenu input[type="checkbox"] { opacity: 0; }
+
+    .respmenu {
+        color: #7c7063;
+        position: relative;
+        min-height: 48px;
+    }
+
+    .respmenu nav { display: none; }
+
+    .respmenu input:checked ~ nav { display: block; }
+
+    .respmenu input:checked ~ .fa-bars { display: none; }
+
+    .respmenu input:not(:checked) ~ .fa-times { display: none; }
+
+    .nav-menu>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
