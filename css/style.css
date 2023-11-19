@@ -2074,8 +2074,14 @@ input[type="checkbox"],
 }
 /* MOVIL */
 @media screen and (max-width: 375px) {
-
+    .container-clearfix {display: none ;}
+    .flex-container {flex-direction: row;}
     .container-tittle-form { padding-top: 2rem; }
+    .logo {width: 100%;}
+    .logo > a > img {max-width: 50%;}
+    .log-nav {padding: 20px; background-color: #f5f4f3; }
+    .flex-container {padding: 0;}
+    .la_expe {text-align: left;}
     .container-form-button { margin-top: 4rem; }
     .box-online { padding: 0.5rem 3.95rem; }
     .name-reserva { padding: 1rem 0.5rem; }
