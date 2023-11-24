@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body{
-	font-family: roboto, sans-serif;
-    background-color: #fff;   
+body {
+    font-family: roboto, sans-serif;
+    background-color: #fff;
+    position: relative;
 }
 
 a {
@@ -17,16 +18,16 @@ img {
     display: block;
 }
 
-.wrapper{
+.wrapper {
     margin: auto;
     text-align: center;
     max-width: 1024px;
 }
 
-.info{
+.info {
     background-color: #f5f4f3;
-    
 }
+
 
 .container-clearfix{
     display: flex;
@@ -103,6 +104,14 @@ img {
     margin-right: 0.4rem
 }
 
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 3;
+    box-shadow: -1px 4px 11px 0.15px rgba(173,173,173,0.81);
+
+}
 
 header .fa-envelope{ /*<<SI NO HAY COMA, AFECTA AL DIRECTO>>!!*/
 color: inherit;
@@ -110,12 +119,12 @@ color: inherit;
 
 
 .log-nav{
-    padding-top: 2.65rem;
+    padding-top: 0.65rem;
     padding-bottom: 1.6rem;
 }
 
 .logo{
-    width: 230px;
+    width: 20%;
 }
 
 .bold{
@@ -1359,7 +1368,7 @@ input[type="checkbox"],
 
 
 /* tablet */
-@media screen and (max-width:  925px){
+@media screen and (max-width: 1024px){
 
     nav>.nav-menu>ul>li>a{
         padding: 0.62rem 0.9rem;
@@ -1443,8 +1452,8 @@ input[type="checkbox"],
 
 }
     
-/* tablet */
-@media screen and (max-width: 768px) {
+/* movil */
+@media screen and (max-width: 767px) {
     h1 {
         width: 69%;
     }
@@ -1546,532 +1555,227 @@ input[type="checkbox"],
 }
 
 /* MOVIL */
-@media screen and (max-width: 600px){
-    
-    h1{
+@media screen and (max-width: 600px) {
+    .logo{
+        margin: 0;
+        width: 33%;
+    }
+    h1 {
         font-size: 3.8rem;
         padding: 1px 17px 3px 17px;
-    }
-
-    .container-clearfix{
-        display: flex;
-        justify-content: center;
-    }
-
-    .call{
-        flex-direction: column;
-        line-height: 1rem;
-    }
-    .phone{
-        margin-right: 0rem;
-    }
-
-    .flag{
-        display: none;
-    }
-
-    .nav-menu>ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-tittle-form{
-        padding-top: 4rem;
-    }
-
-    .tittle-cover{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1{
         width: 100%;
         line-height: 3.5rem;
     }
 
-    .subtittle{
-        font-size: 2rem;
-    }
-
-    .form-reserva {
+    .container-clearfix {
         display: flex;
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
     }
 
-    .box-online{
-        padding: 0.5rem 4.3rem
-    }
-
-    .container-form-button {
-        margin-top: 4rem;
-    }
-
-    .form-reserva,.box-online>p,.box-button>.submit{
-        font-size: 0.8rem;
-    } 
-
-    .in-out,.box-button{
-        margin-top: 1.1rem;
-    }
-
-    .submit{
-        padding: 1rem 5.4rem;
-    }
-
-    .presentation{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .presentation_yoga{
+    .call, .nav-menu > ul, .presentation, .box-newsletters, .box-footer, .container_text_massage, .container_box_massage, .container_box_restaurante, .box_contacto, .container_box_reserva {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .text-presentation_yoga{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
+    .call {
+        display: none;
     }
 
-    .container-yoga-fisico{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .image-home{
+    .phone {
         margin-right: 0rem;
     }
 
-    .text-presentation{
-        margin-top: 1.6rem;
+    .flag {
+        display: none;
+    }
+
+    .nav-menu > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-tittle-form, .box-formulario {
+        padding-top: 4rem;
+    }
+
+    .tittle-cover, .presentation_yoga, .presentation_anti_stress, .presentation_one, .presentation_two, .presentation_four, .presentation_five, .presentation_seven {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
-    .experience{
-        width: 100%;
+    .box-formulario {
+        margin-top: 4rem;
     }
 
-    .box-reserva{
-        margin-top: 35px
+    .box-button, .in-out {
+        margin-top: 1.1rem;
     }
 
-    .box-activities{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+    .submit {
+        padding: 1rem 5.4rem;
     }
 
-    .box-activities>li{
-        width: 100%;
+    .image-home, .image-massage, .image-massage_two, .image-detox {
+        margin-right: 0rem;
     }
 
-    .container-box-reserva{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .text-reserva{
-        display: flex;
-        align-items: center;
-        width: 313px;
-        margin-top: 1.6rem;
-    }
-
-    .rent{
-        width: 100%;
-    }
-
-    .text-reserva>p{
-        
-        width: 100%;
-    }
-
-    .actividades{
-        margin-bottom: 0rem;
-    }
-
-    .box-dates{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .image-box{
-        margin-top: 3rem;
-    }
-
-    .box1>.image-box{   
+    .box1 > .image-box, .box2 > .image-box, .box3 > .image-box {
         display: inline-block;
     }
 
-     .box2>.image-box{   
-        display: inline-block;
-    }
-
-     .box3>.image-box{   
-        display: inline-block;
-    }
-
-    .box2,.box3{
+    .box2, .box3 {
         margin-left: 0;
     }
 
-    .newsletters{
-        width: 100%;
-        padding: 3rem 0 2.5rem;
-        display: flex;
-        justify-content: center
+    .image-box {
+        margin-top: 3rem;
     }
 
-    .box-newsletters{
+    .box-newsletters, .box-footer, .container_text_massage, .container_box_massage, .container_box_restaurante, .box_contacto, .container_box_reserva {
         display: flex;
         flex-direction: column;
-        width: 70%;
         align-items: center;
     }
 
-    .box-footer{
-        display: flex;
+    .box-newsletters {
         justify-content: center;
-        flex-direction: column;
+    }
+
+    .box-footer {
+        justify-content: center;
         align-content: center;
         flex-wrap: wrap;
         margin-top: 1rem;
     }
 
-    .contacto,.box-info{
+    .contacto, .box-info, .container-rrss {
         text-align: center;
-    }
-
-    .box-info,.container-rrss{
         margin-top: 1rem;
     }
 
     .follow-us {
-    margin-bottom: 0.4rem;
-}
+        margin-bottom: 0.4rem;
+    }
 
-    .box-rrss{
+    .box-rrss {
         justify-content: space-around;
     }
 
-/* two */
-    .presentation_anti_stress{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .text-presentation_anti_stress,.text-presentation_mascotas{
-        width: 90%;
-    }
-
-    .program{
-        width: 90%;
-        margin-right: 0;
-        text-align: center;
-        margin-top: 2rem
-    }
-
-    .tittle_program_anti_stress{
-        text-align: center;
-    }
-
-    .box-web_reserva_form{
-        display: flex;
-        justify-content: center;
-    }
-
-    .container-help{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .presentation_one{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-massage{
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .text-services{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .presentation_two{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .image-massage_two{
-        width: 61%;
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .tittle-list-services{
-        text-align: center;
-    }
-
-
-/* three */
-
-
-
-    .tittle_program_detox{
-        text-align: center;
-        width: 100%;
-        
-    }
-
-    .image-detox{
-        margin-bottom: 2rem;
-        margin-right: 0;
-    }
-
-    .text-services_detox,.tittle-list-services{
-        width: 100%;}
-
-/* four */
-
-    .block-four{
-        padding-top: 8rem;
-    }
-
-    .presentation_four{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-services_transforma{
+    .presentation, .experience, .rent, .actividades, .box-reserva, .box-activities > li, .container-box-reserva, .tittle-list-services, .tittle-list-services_massage {
         width: 100%;
     }
 
-/* five */
-
-    .presentation_mascotas{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .presentation_five{
+    .box-dates {
+        padding: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    .tittle_program_mascotas{
-        text-align: center;
-        width: 75%;
-    }
-
-/* seven */
-    
-    .container_text_massage{
-        align-items: center;
-    }
-
-    .tittle_program_massage{
-        width: 100%;
-
-    }    
-
-    .presentation_seven{
-        display: flex;
+    .box-name, .box-mail-phone, .container-image_contact {
         flex-direction: column;
-        align-items: center;
     }
 
-    .text-services_massage{
-        width: 90%;
+    li > .bordername_contact {
+        margin-right: 0;
+    }
+
+    li > .borderapellidos_contact {
         margin-left: 0;
     }
 
-    .tittle-list-services_massage{
-        margin-top: 2rem;
+    li > .bordermail_contact {
+        margin-right: 0;
     }
 
-    .container_box_massage{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    li > .bordertelefono_contact {
+        margin-left: 0;
     }
 
-    .presentation_box_terapias{
-        margin-bottom: 0;
-
+     /* menu responsive */
+     .respmenu input[type="checkbox"],
+     .respmenu .fa-bars,
+     .respmenu .fa-times {
+         position: absolute;
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+         right:140px;
+         top: 55px;
+         width: 48px;
+         height: 48px;
+         display: initial;
+         z-index: 3;
+     }
+ 
+     .respmenu .fa-bars,
+     .respmenu .fa-times {
+         font-size: 48px;
+         pointer-events: none;
+     }
+ 
+     .respmenu input[type="checkbox"] { opacity: 0; }
+ 
+     body>header {
+        position: relative;
     }
-    .box_masaje{
-        width: 100%;
-        margin-bottom: 4rem;
-    }
-
-/* eigth */
-    
-    .container_box_restaurante{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box_restaurante{
-        width: 90%;
-    }
-
-/* eigth */
-
-    .box_contacto{
-        padding: 3rem 13px 4.5rem;
-        width: 66%;
-    }
-
-    .name_container_box{
+         .respmenu nav {
+             position: absolute;
+             top: 0;
+             right:-500px;
+             background-color: #f5f4f3;
+             width: 500px;
+              max-width: 100%; 
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+             transition: all .5s ease-in-out;
+             z-index: 2;
+    /*         visibility: hidden;*/
+         }
+     
+         .respmenu nav ul {
+             padding: 0;
+             list-style: none;
+         }
+     
+         .respmenu nav ul li {
+             padding: 10px;
+             text-align: center;
+         }
+     
+         .respmenu input:checked ~ nav {
+            right: 0;
+            background-color: #f5f4f3;
+    /*        visibility: visible;*/
+         }
+ 
+     .respmenu .fa-bars {
+         display: block;
+         font-size: 35px;
+         cursor: pointer;
+     }
+ 
+     .respmenu input:checked ~ .fa-bars { display: none; }
+ 
+     .respmenu input:not(:checked) ~ .fa-times { display: none; }
+ 
+     .nav-menu>ul {
          display: flex;
-        flex-direction: column;
-    }
-    
-/* contact */
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ }
 
-    .image-cover_contacto{
-        background-position: 5% 58%;
-    }
-
-    .box_name, .box_mail_phone{
-        flex-direction: column;
-    }
-    
-    li>.bordername_contact{
-        margin-right: 0;
-    }   
-
-    li>.borderapellidos_contact{
-        margin-left: 0;
-    } 
-
-    li>.bordermail_contact{
-        margin-right: 0;
-    }
-
-    li>.bordertelefono_contact{
-        margin-left: 0;
-    }
-
-/* reservas */
-
-
-    .presentation_box_reserva{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text1{
-        width: 100%;
-        text-align: center;
-    }
-    
-
-    .box_reserva{
-        width: 100%;
-        
-    }
-    
-    .text-reserva-formulario{
-        width: 77%;
-    }
-
-    .container-fecha{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box-fecha_desde, .box-fecha_hasta{
-        width: 100%;
-    }
-
-    .box-fecha_desde{
-        margin-right: 0px;
-    }
-
-    .box-fecha_hasta{
-        margin-left: 0px;
-    }
-
-    
-    .container-image_contact{
-
-        display: none;
-    }
-
-    
-}
-
-/* MOVIL */
-@media screen and (max-width: 390px) {
-    /* menu responsive */
+ @media screen and (max-width: 390px){
     .respmenu input[type="checkbox"],
     .respmenu .fa-bars,
     .respmenu .fa-times {
-        position: absolute;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        right: 0;
-        top: 0;
-        width: 48px;
-        height: 48px;
-        display: initial;
+        right:10px;
+        top: 40px;
     }
+   
+ }
 
-    .respmenu .fa-bars,
-    .respmenu .fa-times {
-        font-size: 48px;
-        pointer-events: none;
-    }
-
-    .respmenu input[type="checkbox"] { opacity: 0; }
-
-    .respmenu {
-        color: #7c7063;
-        position: relative;
-        min-height: 48px;
-    }
-
-    .respmenu nav { display: none; }
-
-    .respmenu input:checked ~ nav { display: block; }
-
-    .respmenu input:checked ~ .fa-bars { display: none; }
-
-    .respmenu input:not(:checked) ~ .fa-times { display: none; }
-
-    .nav-menu>ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-}
 /* MOVIL */
 @media screen and (max-width: 375px) {
     .container-clearfix {display: none ;}
@@ -2079,7 +1783,7 @@ input[type="checkbox"],
     .container-tittle-form { padding-top: 2rem; }
     .logo {width: 100%;}
     .logo > a > img {max-width: 50%;}
-    .log-nav {padding: 20px; background-color: #f5f4f3; }
+    .log-nav {padding: 15px 10px 6px; background-color: #f5f4f3; }
     .flex-container {padding: 0;}
     .la_expe {text-align: left;}
     .container-form-button { margin-top: 4rem; }
@@ -2108,7 +1812,7 @@ input[type="checkbox"],
 
     /* seven */
     .image-cover_seven { background-position: 13% 166%; }
-    .button-actividades { width: 100%; }
+    .button-actividades { width: 75%; }
 
     /* eigth */
     .box_contacto { width: 90%; }
@@ -2121,47 +1825,17 @@ input[type="checkbox"],
     .box_reserva { padding: 3rem 0px 3.5rem; }
     .box_animales { margin: 1rem; }
 
-    /* menu responsive */
+    .respmenu .fa-times {
+        right:6px;
+        top: 10px;
+        
+    }
+
     .respmenu input[type="checkbox"],
-    .respmenu .fa-bars,
-    .respmenu .fa-times {
-        position: absolute;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        right: 0;
-        top: 0;
-        width: 48px;
-        height: 48px;
-        display: initial;
-    }
-
-    .respmenu .fa-bars,
-    .respmenu .fa-times {
-        font-size: 48px;
-        pointer-events: none;
-    }
-
-    .respmenu input[type="checkbox"] { opacity: 0; }
-
-    .respmenu {
-        color: #7c7063;
-        position: relative;
-        min-height: 48px;
-    }
-
-    .respmenu nav { display: none; }
-
-    .respmenu input:checked ~ nav { display: block; }
-
-    .respmenu input:checked ~ .fa-bars { display: none; }
-
-    .respmenu input:not(:checked) ~ .fa-times { display: none; }
-
-    .nav-menu>ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+     .respmenu .fa-bars,
+     .respmenu .fa-times {
+         right:8px;
+         top: 32px;
+     }
+    
 }
-
