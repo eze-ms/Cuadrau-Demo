@@ -1,0 +1,3 @@
+[submodule "cuadrau-demo"]
+    path = cuadrau-demo
+    url = https://github.com/eze-ms/cuadrau-demo.git
