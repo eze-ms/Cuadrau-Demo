@@ -219,7 +219,7 @@ ul>li>ul>li>a{
 }
 
 ul>li>ul>li>a:hover{
-    background-color: #b69078;
+    background-color: #04ACEC;
     color: #FFFFFF;
 }
 
@@ -1721,15 +1721,16 @@ input[type="checkbox"],
         position: relative;
     }
          .respmenu nav {
-             position: absolute;
+             position: fixed;
              top: 0;
              right:-500px;
              background-color: #f5f4f3;
-             width: 500px;
+             width: 100%;
               max-width: 100%; 
              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
              transition: all .5s ease-in-out;
              z-index: 2;
+             top: -7px;
     /*         visibility: hidden;*/
          }
      
@@ -1767,6 +1768,10 @@ input[type="checkbox"],
  }
 
  @media screen and (max-width: 390px){
+    .info{
+        display: none;
+    }
+    
     .respmenu input[type="checkbox"],
     .respmenu .fa-bars,
     .respmenu .fa-times {
