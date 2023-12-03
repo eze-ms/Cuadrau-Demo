@@ -1594,6 +1594,14 @@ input[type="checkbox"],
         display: flex;
         flex-direction: column;
     }
+    .container-yoga-fisico{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .text-services_detox{
+        width: 100%;
+    }
 
     .container-tittle-form, .box-formulario {
         padding-top: 4rem;
@@ -1605,6 +1613,16 @@ input[type="checkbox"],
         align-items: center;
     }
 
+    .services_anti_stress{
+        text-align: left;
+    }
+    .presentation_two{
+        padding: 0;
+    }
+    .program{
+        width: 100%;
+        margin-right: 0;
+    }
     .box-formulario {
         margin-top: 4rem;
     }
@@ -1765,12 +1783,25 @@ input[type="checkbox"],
          flex-direction: column;
          align-items: flex-start;
      }
+     .newsletters{
+        width: 100%;
+    }
+
+    .text-presentation_yoga,.text-presentation_anti_stress,.text-presentation_mascotas{
+        width: 100%;
+    }
+
+    .text-presentation_restaurante>.text1{
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .box_restaurante {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 414) {
-    .log-nav{
-            background-color: #f5f4f3;
-    }
+@media screen and (max-width: 414px) {
     .flex-container{
         padding: 1px;
     }
@@ -1816,7 +1847,7 @@ input[type="checkbox"],
     .container-tittle-form { padding-top: 2rem; }
     .logo {width: 100%;}
     .logo > a > img {max-width: 50%;}
-    .log-nav {padding: 15px 10px 6px; background-color: #f5f4f3; }
+    .log-nav {padding: 15px 10px 6px; }
     .flex-container {padding: 0;}
     .la_expe {text-align: left;}
     .container-form-button { margin-top: 4rem; }
@@ -1868,7 +1899,8 @@ input[type="checkbox"],
      .respmenu .fa-bars,
      .respmenu .fa-times {
          right:8px;
-         top: 32px;
+         top: 15px;
      }
     
+     
 }
