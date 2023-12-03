@@ -1790,15 +1790,23 @@ input[type="checkbox"],
 
 
 @media screen and (max-width: 390px){
+    .log-nav{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
     .info{
         display: none;
+    }
+    .flex-container{
+        padding: 1rem;
     }
 
     .respmenu input[type="checkbox"],
     .respmenu .fa-bars,
     .respmenu .fa-times {
         right:10px;
-        top: 40px;
+        top: 20px;
     }
    
 }
