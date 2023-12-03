@@ -1768,7 +1768,7 @@ input[type="checkbox"],
 }
 
 @media screen and (max-width: 414) {
-        .log-nav{
+    .log-nav{
             background-color: #f5f4f3;
         
     }
@@ -1781,11 +1781,11 @@ input[type="checkbox"],
     }
 
     .respmenu input[type="checkbox"],
-     .respmenu .fa-bars,
-     .respmenu .fa-times {
+    .respmenu .fa-bars,
+    .respmenu .fa-times {
          right:10px;
          top: 30px;
-     }
+    }
 }
 
 
