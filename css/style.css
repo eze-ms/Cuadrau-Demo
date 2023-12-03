@@ -1789,13 +1789,11 @@ input[type="checkbox"],
 }
 
 
- @media screen and (max-width: 390px){
+@media screen and (max-width: 390px){
     .info{
         display: none;
     }
 
-    
-    
     .respmenu input[type="checkbox"],
     .respmenu .fa-bars,
     .respmenu .fa-times {
@@ -1803,7 +1801,7 @@ input[type="checkbox"],
         top: 40px;
     }
    
- }
+}
 
 /* MOVIL */
 @media screen and (max-width: 375px) {
