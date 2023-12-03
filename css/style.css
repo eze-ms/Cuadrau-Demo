@@ -1770,9 +1770,7 @@ input[type="checkbox"],
 @media screen and (max-width: 414) {
     .log-nav{
             background-color: #f5f4f3;
-        
     }
-    
     .flex-container{
         padding: 1px;
     }
