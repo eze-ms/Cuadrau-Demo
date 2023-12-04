@@ -1556,6 +1556,11 @@ input[type="checkbox"],
 
 /* MOVIL */
 @media screen and (max-width: 600px) {
+    .log-nav{
+        padding-top: 0; 
+        padding-bottom: 0;
+
+    }
     .logo{
         margin: 0;
         width: 33%;
@@ -1568,8 +1573,7 @@ input[type="checkbox"],
     }
 
     .container-clearfix {
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
     .call, .nav-menu > ul, .presentation, .box-newsletters, .box-footer, .container_text_massage, .container_box_massage, .container_box_restaurante, .box_contacto, .container_box_reserva {
@@ -1711,7 +1715,12 @@ input[type="checkbox"],
         margin-left: 0;
     }
 
+    .flex-container{
+        padding: 0.8rem;
+    }
+
      /* menu responsive */
+     
      .respmenu input[type="checkbox"],
      .respmenu .fa-bars,
      .respmenu .fa-times {
@@ -1719,8 +1728,8 @@ input[type="checkbox"],
          box-sizing: border-box;
          margin: 0;
          padding: 0;
-         right:140px;
-         top: 55px;
+         right: 12px;
+         top: 21px;
          width: 48px;
          height: 48px;
          display: initial;
@@ -1741,10 +1750,10 @@ input[type="checkbox"],
          .respmenu nav {
              position: fixed;
              top: 0;
-             right:-500px;
+             right:-650px;
              background-color: #f5f4f3;
              width: 100%;
-              max-width: 100%; 
+            max-width: 100%; 
              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
              transition: all .5s ease-in-out;
              z-index: 2;
@@ -1803,7 +1812,7 @@ input[type="checkbox"],
 
 @media screen and (max-width: 414px) {
     .flex-container{
-        padding: 1px;
+        padding: 20px;
     }
     .container-clearfix{
         display: none;
